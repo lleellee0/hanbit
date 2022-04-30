@@ -21,7 +21,6 @@ public class SimpleProductService {
         this.modelMapper = modelMapper;
     }
 
-
     public ProductDto add(ProductDto productDto) {
         Product product = modelMapper.map(productDto, Product.class);
         Product savedProduct = listProductRepository.add(product);
