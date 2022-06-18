@@ -22,7 +22,7 @@ public class SimpleProductService {
     @Autowired
     SimpleProductService(ProductRepository productRepository, ModelMapper modelMapper, ValidationService validationService
     ) {
-        this.productRepository = new ListProductRepository();
+        this.productRepository = productRepository;
         this.modelMapper = modelMapper;
         this.validationService = validationService;
     }
